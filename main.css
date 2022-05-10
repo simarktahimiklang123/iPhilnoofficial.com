@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.5),
+      rgba(0, 0, 255, 0.5)
+    ),
+    url(https://i.pinimg.com/originals/23/bd/f1/23bdf17cec54c1ed6155b0d222e2e75a.gif);
+  background-size: cover;
+  overflow: hidden;
+}
+img{
+  width: 150px;
+  border-radius: 75px;
+  text-transform: lowercase;
+  float: left
+}
+p{
+    text-align: justify;
+    font-size: 18px;
+}
+label{
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    right: 20px;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+label:before{
+    position: absolute;
+    content: '';
+    width:20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    background: #000;
+    cursor: pointer;
+    transition: 0.4s;
+}
+label.active:before{
+    left: 24px;
+    background: #fff;
+}
+body.night{
+    background: #000;
+    color: #fff;
+}
+@media screen and (min-width:900px) {
+  .respon{
+    display: flex;
+  
+}
+p{
+    max-width: 100%;
+    line-height: 30px;
+}
+.style
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page
+{
+    height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: 100% 100%;
+	position: absolute;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: antiquewhite;
+    font-family: sans-serif;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color: antiquewhite;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+nav ul li button:hover
+{
+    color: aqua;
+}
+nav ul li a:hover
+{
+    color: aqua;
+}
+a
+{
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#clock h2 {
+  position: relative;
+  display: block;
+  color: #fff;
+  text-align: center;
+  margin: 40px 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 1em;
+}
+
+#clock #time {
+  display: flex;
+}
+
+#clock #time div {
+  position: relative;
+  margin: 0 5px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+#clock #time div span {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 120px;
+  background: #2196f3;
+  color: #fff;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  z-index: 10;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+#clock #time div span:nth-child(2) {
+  height: 30px;
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+  font-weight: 900;
+  z-index: 9;
+  box-shadow: none;
+  background: #127fd6;
+  text-transform: uppercase;
+}
+
+#clock #time div:last-child span {
+  background: #ff006a;
+}
+
+#clock #time div:last-child span:nth-child(2) {
+  background: #ec0062;
+}}

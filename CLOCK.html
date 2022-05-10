@@ -1,0 +1,109 @@
+<<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar & Clock</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="calendar.css" />
+    <link rel="stylesheet" href="clock.css"/>
+    <link rel="stylesheet" href="clockstyle.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+<style>
+ body{
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   display: flex;
+   justify-content: center;
+
+ }
+</style>
+    <!--Calendar-->
+  </head>
+  <body>
+    <div class="navbar"></div>
+    <div>
+    </div>
+        <nav>
+            <ul id='MenuItems'>
+              <br><br>
+                <li><a href="WebpageBSMB.html">Home</a></li>
+                <li><a href="https://www.msunaawan.edu.ph/" target="_blank">About Us</a></li>
+                <li><a href='#'>Services</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+       </nav>
+    </div>
+  <body background="dota2.gif">
+    <div class="container">
+      <div class="calendar">
+        <div class="month">
+          <i class="fas fa-angle-left prev"></i>
+          <div class="date">
+            <h1></h1>
+            <p></p>
+          </div>
+          <i class="fas fa-angle-right next"></i>
+        </div>
+        <div class="weekdays">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+        <div class="days"></div>
+    </div>
+
+    <script src="calendar.js"></script>
+  </body>
+  <!--clock-->
+</head>
+<body>
+    <div id="clock">
+        <h2><strong>THE TIME TODAY IS</strong></h2>
+        <div id="time">
+            <div><span id="hour">00</span><span>Hours</span></div>
+            <div><span id="minute">00</span><span>Minutes</span></div>
+            <div><span id="second">00</span><span>Seconds</span></div>
+        </div>
+    </div>
+
+    <script src="clock.js"></script>
+</body>
+  <!--menu-->
+  <div class="menu1">
+    <ul id="MenuItems">
+      <li><a href="contact.html"><strong>🔙GO BACK</strong></a></li>
+    </ul>
+  </div> 
+  <!--DARKMODE-->
+</body>
+<header>
+    <label id="dark-change"></label>
+</header>
+</main>
+<script>
+ var content = document.getElementsByTagName('body')[0];
+ var darkMode = document.getElementById('dark-change');
+ darkMode.addEventListener('click', function(){
+    darkMode.classList.toggle('active');
+    content.classList.toggle('night');
+})
+</script>
+</marquee>
+
+</body>
+</html>
